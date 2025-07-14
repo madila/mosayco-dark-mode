@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "mosayco/dark-mode",
+	"version": "0.1.0",
+	"title": "Dark Mode",
+	"category": "widgets",
+	"icon": "media-interactive",
+	"description": "Add a dark mode by configuring alternative colours and adding a toggle button anywhere on your website",
+	"example": {},
+	"supports": {
+		"interactivity": true
+	},
+	"textdomain": "mosayco-dark-mode",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScriptModule": "file:./view.js"
+}
