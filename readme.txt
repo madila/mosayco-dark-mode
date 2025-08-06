@@ -1,12 +1,12 @@
-=== Dark Mode ===
+=== Dark Mode - Mosayco ===
 Contributors:      Ruben Madila
 Tags:              block
-Tested up to:      6.1
+Tested up to:      6.6
 Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-An interactive block with the Interactivity API
+A way to integrate alternative colours for the dark mode version of you website, while adding a new block to toggle this behaviour or automatically use the user's device default.
 
 == Description ==
 
@@ -17,23 +17,23 @@ Markdown parsed.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. Upload the plugin files to the `/wp-content/plugins/mosayco-dark-mode` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Navigate to the Site Editor and add new Custom colours with the same colour slug and prefixed by  "dark-", e.g. "dark-accent-1".
+4. Save the customisations.
+5. Add the Dark mode block anywhere on your website, or let the plugin automatically toggle your website to the user's current theme.
+6. Alternatively, use the theme.json custom "settings" > "custom" > "dark-mode" to add an array of colour alternatives, using the same naming conventions.
 
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Can I add dark mode gradients? =
 
-An answer to that question.
+Not at the moment, but I am working on an easy way to do it.
 
-= What about foo bar? =
+= Can I customise the Dark mode toggle button? =
 
-Answer to foo bar dilemma.
+I am in the process to declare the settings on the global scope so you can use the Global Styles to modify the block.
 
 == Screenshots ==
 
