@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Mosayco - Dark Mode
  * Description:       An interactive block to allow for custom theme dark mode using the Interactivity API
- * Version:           0.1.0
+ * Version:           0.1.1
  * Requires at least: 6.6
  * Requires PHP:      8.0
  * Author:            Ruben Madila

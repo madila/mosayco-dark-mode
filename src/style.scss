@@ -35,14 +35,21 @@
 		color: var(--wp--preset--color--contrast);
 		fill: var(--wp--preset--color--contrast);
 		padding: 0;
-		border: 1px solid;
+		border: 1px solid transparent;
 		border-radius: var(--wp--preset--border-radius, 0.5rem);
 		cursor: pointer;
 		transition: background-color 400ms, border 200ms, color 400ms ease-out;
 
-		&:hover {
-			background-color: color-mix(in srgb, transparent, var(--wp--preset--color--contrast) 5%);
-			border-color: color-mix(in srgb, transparent, var(--wp--preset--color--contrast) 15%);
+		&:where(:hover,:focus,:focus-visible) {
+			box-shadow: 1px 1px currentColor;
+			outline-offset: .2rem;
+			outline-color: currentColor;
+			border: 1px solid currentColor;
+		}
+
+		&:where(:active) {
+			border: 1px solid currentColor;
+			box-shadow: 2px 2px currentColor;
 		}
 
 		> svg {
